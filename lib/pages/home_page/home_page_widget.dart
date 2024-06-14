@@ -64,8 +64,20 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   FFButtonWidget(
-                    onPressed: () {
-                      print('Button pressed ...');
+                    onPressed: () async {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text(
+                            'Snackbar classic',
+                            style: TextStyle(
+                              color: FlutterFlowTheme.of(context).primaryText,
+                            ),
+                          ),
+                          duration: const Duration(milliseconds: 4000),
+                          backgroundColor:
+                              FlutterFlowTheme.of(context).secondary,
+                        ),
+                      );
                     },
                     text: 'Button',
                     options: FFButtonOptions(
