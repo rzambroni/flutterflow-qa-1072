@@ -68,7 +68,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                       ScaffoldMessenger.of(context).showSnackBar(
                         SnackBar(
                           content: Text(
-                            'Snackbar classic',
+                            'Snackbar classic changing ',
                             style: TextStyle(
                               color: FlutterFlowTheme.of(context).primaryText,
                             ),
